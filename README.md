@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 7Mountain Poker - Marketing Website
 
-## Getting Started
+Marketing- und Landing-Page for the [7Mountain Poker Tournament Timer](https://7mountainpoker.vercel.app).
 
-First, run the development server:
+**Live:** https://7mountain-poker.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tech Stack
+
+- **Framework:** Next.js 16.2 (App Router, Turbopack)
+- **Styling:** Tailwind CSS 4, custom dark poker theme
+- **Animations:** Framer Motion, CSS IntersectionObserver scroll animations
+- **Language:** TypeScript, bilingual (DE/EN) with runtime i18n
+- **Hosting:** Vercel (auto-deploy via GitHub)
+- **OG Image:** Dynamic Edge-generated Open Graph image
+
+## Project Structure
+
+```
+src/
+  app/
+    page.tsx              # Main landing page (client-side, LanguageProvider)
+    layout.tsx            # Root layout with SEO metadata + JSON-LD
+    globals.css           # Tailwind theme, animations, poker-themed utilities
+    opengraph-image.tsx   # Dynamic OG image (Edge runtime)
+    impressum/page.tsx    # Legal notice (Impressum, § 5 DDG)
+    datenschutz/page.tsx  # Privacy policy (DSGVO-compliant)
+  components/
+    Navigation.tsx        # Fixed header with nav links, language switcher, CTA
+    HeroSection.tsx       # Hero with badge, headline, CTAs, app screenshot
+    FeaturesSection.tsx   # 4 core + 4 advanced features grid
+    TVRemoteSection.tsx   # TV mode screenshot + phone remote mockup
+    DemoSection.tsx       # 3-step "How it works" + screenshot gallery
+    ProFeaturesSection.tsx # 6 pro features (voice, templates, keyboard, etc.)
+    PowerToolsSection.tsx # 12 power tools (ICM, side pot, bounty, etc.)
+    QuickStartSection.tsx # 3 quick start modes (Turbo/Standard/Deep Stack)
+    TestimonialsSection.tsx # 3 testimonial cards
+    CTASection.tsx        # Final call-to-action
+    Footer.tsx            # Footer with product/legal links
+    ImageLightbox.tsx     # Click-to-zoom lightbox with React Portal
+    AnimatedSection.tsx   # IntersectionObserver scroll-triggered animations
+    LanguageContext.tsx    # React Context for DE/EN language switching
+  lib/
+    i18n.ts               # All translations (DE + EN)
+public/
+  screenshots/            # Real app screenshots (timer, TV mode, liga, etc.)
+  robots.txt              # Crawler rules
+  sitemap.xml             # Sitemap for SEO
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Sections on the Landing Page
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Hero** - Headline, "Kostenlos & ohne Anmeldung" badge, app screenshot
+2. **Features** - 4 core + 4 advanced features
+3. **TV & Remote** - TV mode screenshot + smartphone remote mockup
+4. **How It Works** - 3-step setup process with screenshot gallery
+5. **Pro Features** - 6 professional features
+6. **Power Tools** - 12 advanced tools (ICM, Side Pot, Bounty, etc.)
+7. **Quick Start** - 3 preset tournament modes
+8. **Testimonials** - User quotes
+9. **CTA** - Final call-to-action with trust badges
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## SEO
 
-## Learn More
+- Open Graph + Twitter Card meta tags with dynamic OG image
+- JSON-LD structured data (WebApplication schema)
+- Canonical URL, sitemap.xml, robots.txt
+- Expanded keywords for poker timer search queries
 
-To learn more about Next.js, take a look at the following resources:
+## Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # Production build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Michael Prill - sevenmountainpoker@icloud.com
