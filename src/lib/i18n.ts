@@ -178,6 +178,7 @@ export const translations = {
     demo: {
       label: "SO FUNKTIONIERT'S",
       title: "In 3 Schritten zum perfekten Turnier",
+      screenshotNote: "",
       step1: {
         title: "Turnier konfigurieren",
         description:
@@ -445,6 +446,7 @@ export const translations = {
     demo: {
       label: "HOW IT WORKS",
       title: "3 steps to the perfect tournament",
+      screenshotNote: "Screenshots show the German interface. The app fully supports English.",
       step1: {
         title: "Configure tournament",
         description:

@@ -73,6 +73,11 @@ export default function DemoSection() {
               </AnimatedSection>
             ))}
           </div>
+          {t.demo.screenshotNote && (
+            <p className="mt-4 text-center text-xs text-muted/60 italic">
+              {t.demo.screenshotNote}
+            </p>
+          )}
         </AnimatedSection>
       </div>
     </section>

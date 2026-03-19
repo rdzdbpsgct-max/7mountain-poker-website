@@ -61,8 +61,53 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "7Mountain Poker",
+    alternateName: "7Mountain Poker Tournament Timer",
+    description:
+      "Professional poker tournament timer with blind structure generator, player management, TV mode, remote control, leagues, ICM calculator and more. Free and no signup required.",
+    url: siteUrl,
+    applicationCategory: "GameApplication",
+    operatingSystem: "Any",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "EUR",
+    },
+    featureList: [
+      "Tournament Timer",
+      "Blind Structure Generator",
+      "Player Management",
+      "TV Mode with 4 Layouts",
+      "Smartphone Remote Control",
+      "468 Voice Announcements",
+      "League & Series Mode",
+      "ICM Calculator",
+      "Side Pot Calculator",
+      "Rebuy, Add-On & Bounty",
+      "PWA & Offline Support",
+      "Multi-Currency (EUR, USD, GBP, CHF, SEK)",
+    ],
+    author: {
+      "@type": "Person",
+      name: "Michael Prill",
+    },
+    inLanguage: ["de", "en"],
+  };
+
+  // JSON-LD is a static, hardcoded object with no user input - safe to serialize
+  const jsonLdString = JSON.stringify(jsonLd);
+
   return (
     <html lang="de" className={`${inter.variable} h-full antialiased`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLdString }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
