@@ -1,26 +1,143 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: #0f1923;
+  --color-foreground: #f1f5f9;
+  --color-surface: #1e2d3d;
+  --color-surface-hover: #263a4d;
+  --color-emerald: #10b981;
+  --color-emerald-dark: #059669;
+  --color-emerald-glow: rgba(16, 185, 129, 0.3);
+  --color-gold: #f59e0b;
+  --color-gold-glow: rgba(245, 158, 11, 0.2);
+  --color-red-accent: #ef4444;
+  --color-muted: #94a3b8;
+  --color-border: #2d3f52;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Emerald glow effect for buttons */
+.glow-emerald {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4), 0 0 60px rgba(16, 185, 129, 0.1);
+}
+
+.glow-emerald:hover {
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.6), 0 0 80px rgba(16, 185, 129, 0.2);
+}
+
+/* Subtle card glow on hover */
+.card-glow:hover {
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.15), 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #10b981, #34d399, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Background pattern - subtle poker felt texture */
+.poker-bg {
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(245, 158, 11, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(16, 185, 129, 0.03) 0%, transparent 50%);
+}
+
+/* Floating card suits animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.04; }
+  50% { transform: translateY(-20px) rotate(5deg); opacity: 0.08; }
+}
+
+.suit-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Poker felt texture for sections */
+.poker-felt {
+  background-image:
+    radial-gradient(ellipse at 50% 50%, rgba(16, 185, 129, 0.03) 0%, transparent 70%);
+}
+
+/* Decorative poker chip */
+.poker-chip {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px dashed rgba(16, 185, 129, 0.15);
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 40%, transparent 41%);
+}
+
+/* Timer colon pulse */
+@keyframes timerPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.timer-pulse {
+  animation: timerPulse 1s ease-in-out infinite;
+}
+
+/* Poker table ellipse background */
+.poker-table-glow {
+  background-image: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(16, 185, 129, 0.04) 0%, transparent 100%);
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-500 { animation-delay: 500ms; }
+.animate-delay-700 { animation-delay: 700ms; }
+.animate-delay-1000 { animation-delay: 1000ms; }
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
 }
