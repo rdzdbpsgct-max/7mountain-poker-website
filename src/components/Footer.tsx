@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useLanguage } from "./LanguageContext";
 
 export default function Footer() {
@@ -63,20 +64,20 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/impressum"
                   className="text-sm text-muted hover:text-foreground transition-colors"
                 >
                   {t.footer.links.imprint}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/datenschutz"
                   className="text-sm text-muted hover:text-foreground transition-colors"
                 >
                   {t.footer.links.privacy}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
