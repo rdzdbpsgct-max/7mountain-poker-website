@@ -53,7 +53,7 @@ export default function DatenschutzPage() {
             Michael Prill<br />
             Im Schönblick 31a<br />
             53604 Bad Honnef<br />
-            E-Mail: <a href="mailto:info@7mountainpoker.de" className="text-emerald hover:underline">info@7mountainpoker.de</a>
+            E-Mail: <a href="mailto:sevenmountainpoker@icloud.com" className="text-emerald hover:underline">sevenmountainpoker@icloud.com</a>
           </address>
         </Section>
 
@@ -170,7 +170,7 @@ export default function DatenschutzPage() {
           </InfoBox>
           <p className="mt-3">
             Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:{" "}
-            <a href="mailto:info@7mountainpoker.de" className="text-emerald hover:underline">info@7mountainpoker.de</a>
+            <a href="mailto:sevenmountainpoker@icloud.com" className="text-emerald hover:underline">sevenmountainpoker@icloud.com</a>
           </p>
           <p className="mt-2">
             Ferner haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu

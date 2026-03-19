@@ -41,7 +41,7 @@ export default function ImpressumPage() {
 
         <Section title="Kontakt">
           <InfoBox>
-            <p>E-Mail: <a href="mailto:info@7mountainpoker.de" className="text-emerald hover:underline">info@7mountainpoker.de</a></p>
+            <p>E-Mail: <a href="mailto:sevenmountainpoker@icloud.com" className="text-emerald hover:underline">sevenmountainpoker@icloud.com</a></p>
           </InfoBox>
         </Section>
 
