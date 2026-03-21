@@ -9,6 +9,7 @@ import DemoSection from "@/components/DemoSection";
 import ProFeaturesSection from "@/components/ProFeaturesSection";
 import PowerToolsSection from "@/components/PowerToolsSection";
 import QuickStartSection from "@/components/QuickStartSection";
+import WhatsNewSection from "@/components/WhatsNewSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -25,6 +26,7 @@ export default function Home() {
         <ProFeaturesSection />
         <PowerToolsSection />
         <QuickStartSection />
+        <WhatsNewSection />
         <TestimonialsSection />
         <CTASection />
       </main>

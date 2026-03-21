@@ -90,7 +90,7 @@ export default async function Image() {
             justifyContent: "center",
           }}
         >
-          {["TV-Modus", "Fernbedienung", "Ligen", "ICM-Rechner", "468 Ansagen"].map(
+          {["TV-Modus", "Fernbedienung", "Ligen", "ICM-Rechner", "468 Ansagen", "v6.9.9"].map(
             (f) => (
               <div
                 key={f}

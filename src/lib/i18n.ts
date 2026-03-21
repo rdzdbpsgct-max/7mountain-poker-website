@@ -244,6 +244,57 @@ export const translations = {
         },
       ],
     },
+    whatsNew: {
+      label: "WAS IST NEU",
+      title: "Neu in v6.9.9",
+      subtitle: "Die neuesten Features und Verbesserungen auf einen Blick.",
+      version: "v6.9.9",
+      testCount: "1.282 Tests",
+      testLabel: "automatisierte Tests sichern die Qualit\u00e4t",
+      categories: {
+        ux: {
+          title: "UX-Verbesserungen",
+          items: [
+            "Spielersuche: Schnelles Finden von Spielern bei gro\u00dfen Turnieren (ab 10 Spieler)",
+            "Duplikat-Spielernamen-Warnung: Verhindert Liga-Verwechslungen durch identische Namen",
+            "Stack-to-Blind-Warnung: Visueller Hinweis wenn Durchschnittsstack kritisch niedrig (\u226415 BB)",
+          ],
+        },
+        logic: {
+          title: "Fachliche Vollst\u00e4ndigkeit",
+          items: [
+            "Serien Auto-Link: Turnierergebnisse werden automatisch mit verkn\u00fcpfter Serie verbunden",
+            "Sieger-Bounty: Gewinner erh\u00e4lt in Bounty-Turnieren automatisch eigenes Bounty-Chip",
+            "Bounty Heads-Up: Automatische Killer-Auswahl bei nur einem m\u00f6glichen Eliminator",
+            "4 neue Preflight-Validierungen vor Turnierstart",
+          ],
+        },
+        license: {
+          title: "Lizenzschl\u00fcssel-System",
+          items: [
+            "12 Premium-Features (TV, Remote, Liga, Multi-Table, Side-Pot, Akzentfarben, Hintergr\u00fcnde, Display-Layouts, Custom Audio, PDF-Export, Serien, ICM-Rechner)",
+            "HMAC-SHA256 signierte Offline-Lizenzschl\u00fcssel",
+            "Alle Features im Standard freigeschaltet \u2014 Gate-System f\u00fcr sp\u00e4tere Monetarisierung vorbereitet",
+          ],
+        },
+        performance: {
+          title: "Performance",
+          items: [
+            "75% weniger React-Reconciliation im Spielmodus",
+            "IndexedDB-Schreiboperationen 99% reduziert",
+            "Timer-Re-Renders von 4x/Sek auf 1x/Sek reduziert",
+          ],
+        },
+        robustness: {
+          title: "Robustheit",
+          items: [
+            "8 Business-Logic-Fixes (Tiebreaker, Payouts, Liga-Cascade-Delete, Knockouts)",
+            "8 Robustness-Fixes (Validierung, NaN-Guards, Float-Normalisierung)",
+            "TV-Display zeigt sofort Inhalte beim \u00d6ffnen (nicht erst nach Timer-Start)",
+          ],
+        },
+      },
+    },
     cta: {
       title: "Bereit f\u00fcr dein n\u00e4chstes Turnier?",
       subtitle:
@@ -510,6 +561,57 @@ export const translations = {
           role: "Casual player",
         },
       ],
+    },
+    whatsNew: {
+      label: "WHAT'S NEW",
+      title: "New in v6.9.9",
+      subtitle: "The latest features and improvements at a glance.",
+      version: "v6.9.9",
+      testCount: "1,282 Tests",
+      testLabel: "automated tests ensure quality",
+      categories: {
+        ux: {
+          title: "UX Improvements",
+          items: [
+            "Player Search: Quickly find players in large tournaments (10+ players)",
+            "Duplicate Player Name Warning: Prevents league mix-ups from identical player names",
+            "Stack-to-Blind Warning: Visual alert when average stack is critically low (\u226415 BB)",
+          ],
+        },
+        logic: {
+          title: "Feature Completeness",
+          items: [
+            "Series Auto-Link: Tournament results automatically linked to associated series",
+            "Winner Bounty: Winner automatically receives their own bounty chip in bounty tournaments",
+            "Bounty Heads-Up: Automatic killer selection when only one possible eliminator",
+            "4 new preflight validations before tournament start",
+          ],
+        },
+        license: {
+          title: "License Key System",
+          items: [
+            "12 premium features (TV, Remote, League, Multi-Table, Side-Pot, Accent Colors, Backgrounds, Display Layouts, Custom Audio, PDF Export, Series, ICM Calculator)",
+            "HMAC-SHA256 signed offline license keys",
+            "All features unlocked by default \u2014 gate system prepared for future monetization",
+          ],
+        },
+        performance: {
+          title: "Performance",
+          items: [
+            "75% less React reconciliation in game mode",
+            "IndexedDB write operations reduced by 99%",
+            "Timer re-renders reduced from 4x/sec to 1x/sec",
+          ],
+        },
+        robustness: {
+          title: "Robustness",
+          items: [
+            "8 business logic fixes (tiebreaker, payouts, league cascade delete, knockouts)",
+            "8 robustness fixes (validation, NaN guards, float normalization)",
+            "TV display shows content immediately on open (no longer waits for timer start)",
+          ],
+        },
+      },
     },
     cta: {
       title: "Ready for your next tournament?",

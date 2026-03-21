@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({
+const inter = localFont({
+  src: "./fonts/InterVariable.woff2",
   variable: "--font-geist-sans",
-  subsets: ["latin"],
   display: "swap",
 });
 
@@ -13,7 +13,7 @@ const siteUrl = "https://7mountain-poker.vercel.app";
 export const metadata: Metadata = {
   title: "7Mountain Poker - Tournament Timer",
   description:
-    "Der ultimative Poker-Turnier-Timer. Blindstruktur, Spielerverwaltung, TV-Modus, Fernbedienung, Ligen und mehr. Kostenlos und ohne Anmeldung.",
+    "Der ultimative Poker-Turnier-Timer v6.9.9. Blindstruktur, Spielerverwaltung, TV-Modus, Fernbedienung, Ligen, Lizenzschl\u00fcssel-System und mehr. 1.282 Tests. Kostenlos und ohne Anmeldung.",
   keywords: [
     "poker",
     "tournament",
@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     "tv modus",
     "fernbedienung",
     "liga",
+    "lizenzschl\u00fcssel",
+    "spielersuche",
+    "bounty",
   ],
   metadataBase: new URL(siteUrl),
   alternates: {
@@ -34,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "7Mountain Poker - Tournament Timer",
     description:
-      "Der ultimative Poker-Turnier-Timer. TV-Modus, Fernbedienung, Ligen, ICM-Rechner und mehr. Kostenlos und ohne Anmeldung.",
+      "Der ultimative Poker-Turnier-Timer v6.9.9. TV-Modus, Fernbedienung, Ligen, ICM-Rechner, Lizenzschl\u00fcssel-System und mehr. 1.282 Tests. Kostenlos und ohne Anmeldung.",
     type: "website",
     url: siteUrl,
     siteName: "7Mountain Poker",
@@ -69,6 +72,7 @@ export default function RootLayout({
     description:
       "Professional poker tournament timer with blind structure generator, player management, TV mode, remote control, leagues, ICM calculator and more. Free and no signup required.",
     url: siteUrl,
+    softwareVersion: "6.9.9",
     applicationCategory: "GameApplication",
     operatingSystem: "Any",
     offers: {
@@ -89,6 +93,10 @@ export default function RootLayout({
       "Rebuy, Add-On & Bounty",
       "PWA & Offline Support",
       "Multi-Currency (EUR, USD, GBP, CHF, SEK)",
+      "License Key System with HMAC-SHA256",
+      "Player Search",
+      "Preflight Validations",
+      "Series Auto-Link",
     ],
     author: {
       "@type": "Person",
