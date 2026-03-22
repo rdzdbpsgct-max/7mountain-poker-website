@@ -14,11 +14,22 @@ type LanguageContextType = {
 const LanguageContext = createContext<LanguageContextType | null>(null);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>("de");
+  const [locale, setLocaleState] = useState<Locale>(() => {
+    if (typeof window !== "undefined") {
+      try {
+        const stored = localStorage.getItem("7mp-locale");
+        if (stored === "en") return "en";
+      } catch { /* ignore */ }
+    }
+    return "de";
+  });
   const t = getTranslations(locale);
 
   const setLocale = (l: Locale) => {
     setLocaleState(l);
+    try {
+      localStorage.setItem("7mp-locale", l);
+    } catch { /* ignore */ }
   };
 
   useEffect(() => {
