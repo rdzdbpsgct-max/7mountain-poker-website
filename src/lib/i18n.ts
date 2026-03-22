@@ -8,6 +8,7 @@ export const translations = {
       howItWorks: "So funktioniert's",
       quickStart: "Schnellstart",
       testimonials: "Stimmen",
+      blog: "Blog",
       startNow: "Jetzt starten",
     },
     hero: {
@@ -276,6 +277,7 @@ export const translations = {
       howItWorks: "How it works",
       quickStart: "Quick Start",
       testimonials: "Testimonials",
+      blog: "Blog",
       startNow: "Start now",
     },
     hero: {

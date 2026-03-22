@@ -13,6 +13,7 @@ export default function Navigation() {
     { href: "#how-it-works", label: t.nav.howItWorks },
     { href: "#quick-start", label: t.nav.quickStart },
     { href: "#testimonials", label: t.nav.testimonials },
+    { href: "/blog", label: t.nav.blog },
   ];
 
   return (
