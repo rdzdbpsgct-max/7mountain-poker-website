@@ -68,41 +68,19 @@ export default function TVRemoteSection({ t }: { t: Translations }) {
 
           {/* RIGHT COLUMN - Remote Control */}
           <AnimatedSection delay={200}>
-            {/* Phone Mockup */}
-            <div className="mx-auto max-w-[220px] rounded-[2rem] border-2 border-border/60 bg-surface/60 p-3 overflow-hidden">
+            {/* Phone Mockup with Real Screenshot */}
+            <div className="mx-auto max-w-[260px] rounded-[2.5rem] border-2 border-border/60 bg-surface/60 p-3 overflow-hidden shadow-xl">
               {/* Phone Notch */}
-              <div className="w-20 h-1 bg-border/40 rounded-full mx-auto mb-3" />
+              <div className="w-20 h-1 bg-border/40 rounded-full mx-auto mb-2" />
 
-              {/* Phone Screen */}
-              <div className="bg-gradient-to-b from-[#0f1923] to-[#1a2332] rounded-2xl p-4 space-y-3">
-                {/* Title */}
-                <div className="text-xs text-muted text-center">Remote</div>
-
-                {/* Play/Pause Button */}
-                <div className="w-full py-3 rounded-xl bg-emerald text-white font-bold text-center text-sm">
-                  ▶ Play
-                </div>
-
-                {/* Prev / Next Buttons */}
-                <div className="grid grid-cols-2 gap-2">
-                  <div className="bg-surface/80 rounded-lg py-2 text-center text-xs text-muted">
-                    ◀ Prev
-                  </div>
-                  <div className="bg-surface/80 rounded-lg py-2 text-center text-xs text-muted">
-                    Next ▶
-                  </div>
-                </div>
-
-                {/* Sound Toggle */}
-                <div className="bg-surface/80 rounded-lg py-2 text-center text-xs text-muted">
-                  🔊 Sound
-                </div>
-
-                {/* Player Count */}
-                <div className="text-[10px] text-muted/50 text-center pt-1">
-                  {t.tvRemote.tv.screens[3]} (6)
-                </div>
-              </div>
+              {/* Real Screenshot */}
+              <ImageLightbox
+                src="/screenshots/remote-control.jpg"
+                alt="7Mountain Poker Smartphone Remote Control - Timer, blinds, player management and tournament controls"
+                width={1100}
+                height={1999}
+                className="rounded-2xl overflow-hidden"
+              />
             </div>
 
             {/* QR Code Hint */}

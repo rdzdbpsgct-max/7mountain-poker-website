@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useLocale } from "@/hooks/useLocale";
 import SubpageHeader from "@/components/SubpageHeader";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import ImageLightbox from "@/components/ImageLightbox";
 
 const t = {
   de: {
@@ -81,6 +82,22 @@ export default function FernbedienungContent() {
         <p className="mt-4 text-lg text-muted max-w-2xl">
           {c.intro}
         </p>
+
+        {/* Screenshot */}
+        <div className="mt-12 flex justify-center">
+          <div className="max-w-[300px] rounded-[2.5rem] border-2 border-border/50 bg-surface/60 p-3 shadow-2xl">
+            <div className="w-20 h-1 bg-border/40 rounded-full mx-auto mb-2" />
+            <ImageLightbox
+              src="/screenshots/remote-control.jpg"
+              alt={locale === "de"
+                ? "7Mountain Poker Smartphone-Fernbedienung — Timer, Blinds, Spieler-Management und Turnier-Steuerung"
+                : "7Mountain Poker Smartphone Remote Control — Timer, blinds, player management and tournament controls"}
+              width={1100}
+              height={1999}
+              className="rounded-2xl overflow-hidden"
+            />
+          </div>
+        </div>
 
         {/* How it works */}
         <section className="mt-16">
