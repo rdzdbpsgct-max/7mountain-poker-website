@@ -34,12 +34,12 @@ export const translations = {
       blinds: {
         title: "Blindstruktur-Generator",
         description:
-          "Automatische Generierung optimaler Blindstrukturen basierend auf Spieleranzahl und gew\u00fcnschter Turnierdauer.",
+          "Automatische Generierung optimaler Blindstrukturen. Drag & Drop zum Sortieren, Blinds-by-End-Time und Big Blind Ante.",
       },
       players: {
         title: "Spieler & Ligen",
         description:
-          "Spielerverwaltung mit Punktesystem und automatischer Spieler\u00fcbernahme aus Liga-Spieltagen. Verwalte Ligen und tracke Ergebnisse \u00fcber mehrere Turniere.",
+          "Spielerverwaltung mit Suchfilter, Duplikat-Erkennung und automatischer \u00dcbernahme aus Liga-Spieltagen. Liga-Charts und Ranglisten \u00fcber mehrere Turniere.",
       },
       series: {
         title: "Serien-Modus",
@@ -54,12 +54,12 @@ export const translations = {
       remote: {
         title: "Fernbedienung",
         description:
-          "Steuere das Turnier vom Smartphone. QR-Code scannen und per Touch Play/Pause, Levels und Spieler verwalten.",
+          "Steuere das Turnier vom Smartphone \u2014 auch mit mehreren Controllern gleichzeitig. Admin- und Viewer-Rollen f\u00fcr flexible Kontrolle.",
       },
       voice: {
         title: "Sprachansagen",
         description:
-          "590 professionelle Audio-Ansagen f\u00fcr Level-Wechsel, Pausen, Eliminierungen, Bubble und Gewinner.",
+          "590 professionelle Audio-Ansagen mit 4 Kategorien (Stimme, Effekte, Countdown, Hinweise). Eigene Sounds hochladen m\u00f6glich.",
       },
       pwa: {
         title: "PWA & Offline",
@@ -71,20 +71,20 @@ export const translations = {
       label: "TV & FERNBEDIENUNG",
       title: "Dein Turnier auf dem gro\u00dfen Bildschirm",
       subtitle:
-        "Zeige den Timer auf dem Fernseher und steuere alles bequem vom Smartphone.",
+        "Zeige den Timer auf dem Fernseher und steuere alles bequem vom Smartphone \u2014 mit mehreren Controllern gleichzeitig.",
       tv: {
         title: "TV-Modus",
         description:
-          "Vollbild-Anzeige f\u00fcr TV, Beamer oder zweiten Monitor. 8 rotierende Info-Screens zeigen Timer, Blinds, Spieler, Auszahlungen, Liga und mehr.",
+          "Vollbild-Anzeige f\u00fcr TV, Beamer oder zweiten Monitor. 8 rotierende Info-Screens zeigen Timer, Blinds, Spieler, Auszahlungen, Side Pots, Liga und mehr. Admin- und Viewer-Rollen f\u00fcr flexible Steuerung.",
         layouts: ["Standard 55/45", "Kompakt 40/60", "Timer-Only", "Ultra Large 70/30"],
-        screens: ["Timer", "Blinds", "Countdown", "Spieler", "Auszahlung", "Blindstruktur", "Sitzplan", "Liga"],
+        screens: ["Timer", "Blinds", "Countdown", "Spieler", "Auszahlung", "Blindstruktur", "Sitzplan", "Liga", "Side Pots"],
       },
       remote: {
         title: "Smartphone-Fernbedienung",
         description:
-          "QR-Code scannen und dein Handy wird zur Fernbedienung. Gro\u00dfe Touch-Buttons f\u00fcr einfache Bedienung.",
+          "QR-Code scannen und dein Handy wird zur Fernbedienung. Multi-Controller-Support f\u00fcr mehrere Smartphones gleichzeitig.",
         qrHint: "QR-Code scannen \u2014 fertig",
-        controls: ["Play / Pause", "N\u00e4chstes Level", "Dealer wechseln", "Sound An/Aus", "Spieler verwalten"],
+        controls: ["Play / Pause", "N\u00e4chstes Level", "Dealer wechseln", "Sound An/Aus", "Call the Clock", "Spieler verwalten"],
       },
     },
     proFeatures: {
@@ -95,7 +95,7 @@ export const translations = {
       voiceItem: {
         title: "590 Sprachansagen",
         description:
-          "Professionelle ElevenLabs-Stimmen (DE + EN) f\u00fcr Level-Wechsel, Pausen, Bubble, In The Money, Eliminierungen und Turniersieger. Mit Countdown-Beeps und Fanfaren.",
+          "Professionelle ElevenLabs-Stimmen (DE + EN) f\u00fcr Level-Wechsel, Pausen, Bubble, Eliminierungen und mehr. Eigene Audio-Dateien hochladen und 4 unabh\u00e4ngige Kategorien steuern.",
       },
       templates: {
         title: "Vorlagen & Templates",
@@ -107,15 +107,20 @@ export const translations = {
         description:
           "Volle Tastenkürzel für Power-User. Steuere Timer, Levels, Sound und Spieler blitzschnell per Keyboard.",
       },
-      currency: {
-        title: "Flexible Einheiten",
+      dealMaking: {
+        title: "Deal-Making / Chop",
         description:
-          "Unterst\u00fctzt verschiedene Einheiten und Formate. Passe die Darstellung an deine Runde an.",
+          "Finale Tisch-Deals mit 3 Methoden: ICM Chop, Chip Chop und Even Split. Manuelle Anpassung per Slider und Deal-Best\u00e4tigung mit Auszahlungs\u00fcbersicht.",
       },
       rebuy: {
-        title: "Rebuy & Add-On",
+        title: "Rebuy, Add-On & Re-Entry",
         description:
-          "Komplettes Rebuy-System mit Add-Ons und Bounties. Automatische Berechnung von Prizepool und Platzierungen.",
+          "Komplettes Rebuy-System mit Add-Ons, Bounties und Re-Entry. Spieler k\u00f6nnen nach Elimination mit neuem Stack wieder einsteigen.",
+      },
+      statistics: {
+        title: "Statistik-Dashboard",
+        description:
+          "Interaktive Trend-Charts f\u00fcr Gewinn, ROI und Cash-Rate. Sortierbare Spielertabelle mit Zeitfiltern \u2014 alles auf einen Blick.",
       },
       history: {
         title: "Historie & Turnier-Klon",
@@ -133,7 +138,7 @@ export const translations = {
       },
       icm: {
         title: "ICM-Rechner",
-        description: "Independent Chip Model Berechnung für faire Turnierequity. Deal-Verhandlungen auf professionellem Niveau.",
+        description: "Independent Chip Model f\u00fcr faire Turnierequity. Direkte Integration mit dem Deal-Making-Rechner f\u00fcr professionelle Chop-Verhandlungen.",
       },
       payoutSim: {
         title: "Auszahlungs-Simulator",
@@ -172,8 +177,16 @@ export const translations = {
         description: "Nachträgliche Anmeldung mit konfigurierbarem Zeitfenster. Automatische Prizepool-Anpassung.",
       },
       guidedTour: {
-        title: "Einführungstour",
-        description: "Interaktiver 5-Schritte Walkthrough für Erstnutzer. Setup-Wizard für schnelle Konfiguration.",
+        title: "Setup-Wizard & Tour",
+        description: "Gef\u00fchrter 6-Schritte Setup-Wizard f\u00fcr Erstnutzer plus interaktive Einf\u00fchrungstour. Vom ersten \u00d6ffnen bis zum Turnier in unter 2 Minuten.",
+      },
+      callTheClock: {
+        title: "Call the Clock",
+        description: "Shot Clock mit konfigurierbarem Countdown (10\u2013300 Sek.). Spannungs-Beeps in den letzten 10 Sekunden. Per Tastenkürzel (C) aktivierbar.",
+      },
+      exports: {
+        title: "Erweiterte Exporte",
+        description: "Text, CSV, Hendon Mob und Blindstruktur-Export. Cloud-Sharing per Web Share API oder direkter Download.",
       },
     },
     demo: {
@@ -303,12 +316,12 @@ export const translations = {
       blinds: {
         title: "Blind Structure Generator",
         description:
-          "Automatic generation of optimal blind structures based on player count and desired tournament duration.",
+          "Automatic generation of optimal blind structures. Drag & drop reordering, blinds-by-end-time and Big Blind Ante support.",
       },
       players: {
         title: "Players & Leagues",
         description:
-          "Player management with point system and automatic player pre-fill from league game days. Manage leagues and track results across multiple tournaments.",
+          "Player management with search filter, duplicate detection and automatic import from league game days. League charts and rankings across tournaments.",
       },
       series: {
         title: "Series Mode",
@@ -323,12 +336,12 @@ export const translations = {
       remote: {
         title: "Remote Control",
         description:
-          "Control the tournament from your smartphone. Scan QR code and manage play/pause, levels and players via touch.",
+          "Control the tournament from your smartphone \u2014 even with multiple controllers at once. Admin and viewer roles for flexible control.",
       },
       voice: {
         title: "Voice Announcements",
         description:
-          "590 professional audio announcements for level changes, breaks, eliminations, bubble and winners.",
+          "590 professional audio announcements with 4 categories (voice, effects, countdown, hints). Upload your own custom sounds.",
       },
       pwa: {
         title: "PWA & Offline",
@@ -340,20 +353,20 @@ export const translations = {
       label: "TV & REMOTE CONTROL",
       title: "Your tournament on the big screen",
       subtitle:
-        "Display the timer on your TV and control everything from your smartphone.",
+        "Display the timer on your TV and control everything from your smartphone \u2014 with multiple controllers at once.",
       tv: {
         title: "TV Mode",
         description:
-          "Fullscreen display for TV, projector or second monitor. 8 rotating info screens show timer, blinds, players, payouts, league and more.",
+          "Fullscreen display for TV, projector or second monitor. 8 rotating info screens show timer, blinds, players, payouts, side pots, league and more. Admin and viewer roles for flexible control.",
         layouts: ["Standard 55/45", "Compact 40/60", "Timer-Only", "Ultra Large 70/30"],
-        screens: ["Timer", "Blinds", "Countdown", "Players", "Payouts", "Blind Structure", "Seating", "League"],
+        screens: ["Timer", "Blinds", "Countdown", "Players", "Payouts", "Blind Structure", "Seating", "League", "Side Pots"],
       },
       remote: {
         title: "Smartphone Remote",
         description:
-          "Scan QR code and your phone becomes a remote control. Large touch buttons for easy operation.",
+          "Scan QR code and your phone becomes a remote control. Multi-controller support for multiple smartphones simultaneously.",
         qrHint: "Scan QR code \u2014 done",
-        controls: ["Play / Pause", "Next Level", "Change Dealer", "Sound On/Off", "Manage Players"],
+        controls: ["Play / Pause", "Next Level", "Change Dealer", "Sound On/Off", "Call the Clock", "Manage Players"],
       },
     },
     proFeatures: {
@@ -364,7 +377,7 @@ export const translations = {
       voiceItem: {
         title: "590 Voice Announcements",
         description:
-          "Professional ElevenLabs voices (DE + EN) for level changes, breaks, bubble, in the money, eliminations and winners. With countdown beeps and fanfares.",
+          "Professional ElevenLabs voices (DE + EN) for level changes, breaks, bubble, eliminations and more. Upload custom audio files and control 4 independent categories.",
       },
       templates: {
         title: "Templates & Presets",
@@ -376,15 +389,20 @@ export const translations = {
         description:
           "Full keyboard shortcuts for power users. Control timer, levels, sound and players instantly via keyboard.",
       },
-      currency: {
-        title: "Flexible Units",
+      dealMaking: {
+        title: "Deal-Making / Chop",
         description:
-          "Supports various units and formats. Customize the display for your game.",
+          "Final table deals with 3 methods: ICM Chop, Chip Chop and Even Split. Manual adjustment via sliders and deal confirmation with payout overview.",
       },
       rebuy: {
-        title: "Rebuy & Add-On",
+        title: "Rebuy, Add-On & Re-Entry",
         description:
-          "Complete rebuy system with add-ons and bounties. Automatic calculation of prize pool and placements.",
+          "Complete rebuy system with add-ons, bounties and re-entry. Players can re-enter after elimination with a fresh stack.",
+      },
+      statistics: {
+        title: "Statistics Dashboard",
+        description:
+          "Interactive trend charts for profit, ROI and cash rate. Sortable player table with time filters \u2014 everything at a glance.",
       },
       history: {
         title: "History & Tournament Cloning",
@@ -402,7 +420,7 @@ export const translations = {
       },
       icm: {
         title: "ICM Calculator",
-        description: "Independent Chip Model calculation for fair tournament equity. Deal negotiations at a professional level.",
+        description: "Independent Chip Model for fair tournament equity. Direct integration with the deal-making calculator for professional chop negotiations.",
       },
       payoutSim: {
         title: "Payout Simulator",
@@ -441,8 +459,16 @@ export const translations = {
         description: "Late registration with configurable time window. Automatic prize pool adjustment.",
       },
       guidedTour: {
-        title: "Guided Tour",
-        description: "Interactive 5-step walkthrough for first-time users. Setup wizard for quick configuration.",
+        title: "Setup Wizard & Tour",
+        description: "Guided 6-step setup wizard for first-time users plus interactive walkthrough. From first open to tournament in under 2 minutes.",
+      },
+      callTheClock: {
+        title: "Call the Clock",
+        description: "Shot clock with configurable countdown (10\u2013300 sec). Tension beeps in the final 10 seconds. Activate via keyboard shortcut (C).",
+      },
+      exports: {
+        title: "Advanced Exports",
+        description: "Text, CSV, Hendon Mob and blind structure export. Cloud sharing via Web Share API or direct download.",
       },
     },
     demo: {

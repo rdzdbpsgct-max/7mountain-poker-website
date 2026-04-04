@@ -68,16 +68,28 @@ const toolIcons = {
       <circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" /><line x1="12" y1="17" x2="12.01" y2="17" />
     </svg>
   ),
+  callTheClock: (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-emerald">
+      <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /><path d="M2 12h2M20 12h2" /><path d="M12 2v2" />
+    </svg>
+  ),
+  exports: (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-emerald">
+      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" /><polyline points="17 8 12 3 7 8" /><line x1="12" y1="3" x2="12" y2="15" />
+    </svg>
+  ),
 };
 
 const iconKeys: (keyof typeof toolIcons)[] = [
   "sidePot", "icm", "payoutSim", "bounty", "multiTable", "autoSave",
   "tournamentLog", "themes", "casting", "handForHand", "lateReg", "guidedTour",
+  "callTheClock", "exports",
 ];
 
 const featureKeys = [
   "sidePot", "icm", "payoutSim", "bounty", "multiTable", "autoSave",
   "tournamentLog", "themes", "casting", "handForHand", "lateReg", "guidedTour",
+  "callTheClock", "exports",
 ] as const;
 
 export default function PowerToolsSection({ t }: { t: Translations }) {

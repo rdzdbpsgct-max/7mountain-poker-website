@@ -21,25 +21,28 @@ const featureIcons = [
     <rect x="2" y="4" width="20" height="16" rx="2" />
     <path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01M8 16h8" />
   </svg>,
-  // 4. Currency
-  <svg key="currency" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-emerald">
-    <circle cx="12" cy="12" r="10" />
-    <path d="M16 8h-4a2 2 0 000 4h2a2 2 0 010 4H8" />
-    <path d="M12 6v2M12 16v2" />
+  // 4. Deal-Making / Handshake
+  <svg key="dealMaking" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-emerald">
+    <path d="M20.42 4.58a5.4 5.4 0 00-7.65 0l-.77.78-.77-.78a5.4 5.4 0 00-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z" />
+    <path d="M12 5.36L8.87 8.5a2.13 2.13 0 000 3h0a2.13 2.13 0 003 0l2.26-2.26a2.13 2.13 0 013 0h0a2.13 2.13 0 010 3L12 17.5" />
   </svg>,
   // 5. Rebuy / Refresh
   <svg key="rebuy" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-emerald">
     <polyline points="23 4 23 10 17 10" />
     <path d="M20.49 15a9 9 0 11-2.12-9.36L23 10" />
   </svg>,
-  // 6. History / Clock
+  // 6. Statistics / Chart
+  <svg key="statistics" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-emerald">
+    <path d="M18 20V10M12 20V4M6 20v-6" />
+  </svg>,
+  // 7. History / Clock
   <svg key="history" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-emerald">
     <circle cx="12" cy="12" r="10" />
     <polyline points="12 6 12 12 16 14" />
   </svg>,
 ];
 
-const cardSuits = ["♠", "♥", "♦", "♣", "♠", "♥"];
+const cardSuits = ["\u2660", "\u2665", "\u2666", "\u2663", "\u2660", "\u2665", "\u2666", "\u2663"];
 
 export default function ProFeaturesSection({ t }: { t: Translations }) {
 
@@ -47,8 +50,9 @@ export default function ProFeaturesSection({ t }: { t: Translations }) {
     t.proFeatures.voiceItem,
     t.proFeatures.templates,
     t.proFeatures.keyboard,
-    t.proFeatures.currency,
+    t.proFeatures.dealMaking,
     t.proFeatures.rebuy,
+    t.proFeatures.statistics,
     t.proFeatures.history,
   ];
 

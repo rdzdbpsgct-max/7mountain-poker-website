@@ -28,8 +28,9 @@ const t = {
     techItems: [
       { label: "WebRTC via PeerJS", desc: "Peer-to-Peer-Verbindung ohne eigenen Server. Signaling über PeerJS Cloud." },
       { label: "Auto-Reconnect", desc: "Verbindung überlebt Browser-Refresh. Exponentieller Backoff (3 Versuche)." },
-      { label: "Multi-Controller", desc: "Bis zu 4 Smartphones gleichzeitig als Fernbedienung nutzbar." },
-      { label: "Wake Lock", desc: "Display bleibt an. Touch-optimiert mit Safe-Area-Insets für alle Smartphone-Modelle." },
+      { label: "Multi-Controller", desc: "Bis zu 4 Smartphones gleichzeitig als Fernbedienung. Admin- und Viewer-Rollen f\u00fcr flexible Kontrolle." },
+      { label: "Auto-Reconnect & State-Sync", desc: "Verbindung \u00fcberlebt Browser-Refresh. Voller State-Sync bei Wiederverbindung." },
+      { label: "Wake Lock", desc: "Display bleibt an. Touch-optimiert mit Safe-Area-Insets f\u00fcr alle Smartphone-Modelle." },
     ],
     cta: "Fernbedienung ausprobieren",
     ctaSub: "Kostenlos, ohne Anmeldung. \uD83D\uDCE1 Share Hub im Spielmodus",
@@ -56,7 +57,8 @@ const t = {
     techItems: [
       { label: "WebRTC via PeerJS", desc: "Peer-to-peer connection without a dedicated server. Signaling via PeerJS Cloud." },
       { label: "Auto-Reconnect", desc: "Connection survives browser refresh. Exponential backoff (3 attempts)." },
-      { label: "Multi-Controller", desc: "Up to 4 smartphones can be used as remote controls simultaneously." },
+      { label: "Multi-Controller", desc: "Up to 4 smartphones as remote controls simultaneously. Admin and viewer roles for flexible control." },
+      { label: "Auto-Reconnect & State-Sync", desc: "Connection survives browser refresh. Full state sync on reconnection." },
       { label: "Wake Lock", desc: "Display stays on. Touch-optimized with safe area insets for all smartphone models." },
     ],
     cta: "Try Remote Control",

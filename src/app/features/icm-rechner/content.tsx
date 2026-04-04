@@ -32,7 +32,7 @@ const t = {
     ],
     useCasesTitle: "Anwendungsf\u00e4lle",
     useCases: [
-      { emoji: "\uD83E\uDD1D", label: "Deal am Final Table", desc: "Berechne faire Auszahlungen f\u00fcr alle verbleibenden Spieler basierend auf ihren Chipstacks." },
+      { emoji: "\uD83E\uDD1D", label: "Deal-Making / Chop", desc: "3 Methoden: ICM Chop, Chip Chop, Even Split. Manuelle Anpassung per Slider und Deal-Best\u00e4tigung mit Auszahlungs\u00fcbersicht." },
       { emoji: "\uD83D\uDCA1", label: "Bubble-Play", desc: "Verstehe den ICM-Druck: Wer hat am meisten zu verlieren, wer kann aggressiv spielen?" },
       { emoji: "\uD83D\uDCCA", label: "Lernwerkzeug", desc: "Vergleiche Chip-Chop mit ICM-Equity und verstehe den Unterschied." },
     ],
@@ -68,7 +68,7 @@ const t = {
     ],
     useCasesTitle: "Use Cases",
     useCases: [
-      { emoji: "\uD83E\uDD1D", label: "Final Table Deal", desc: "Calculate fair payouts for all remaining players based on their chip stacks." },
+      { emoji: "\uD83E\uDD1D", label: "Deal-Making / Chop", desc: "3 methods: ICM Chop, Chip Chop, Even Split. Manual adjustment via sliders and deal confirmation with payout overview." },
       { emoji: "\uD83D\uDCA1", label: "Bubble Play", desc: "Understand ICM pressure: who has the most to lose, and who can play aggressively?" },
       { emoji: "\uD83D\uDCCA", label: "Learning Tool", desc: "Compare a chip chop with ICM equity and understand the difference." },
     ],

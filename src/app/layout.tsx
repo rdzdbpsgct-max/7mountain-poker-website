@@ -13,7 +13,7 @@ const siteUrl = "https://7mountain-poker.vercel.app";
 export const metadata: Metadata = {
   title: "Kostenloser Poker Turnier Timer | 7Mountain Poker",
   description:
-    "Kostenloser Poker Turnier Timer mit TV-Modus, Smartphone-Fernbedienung, Liga-System & 590 Sprachansagen. Blindstruktur, Spielerverwaltung, ICM-Rechner und mehr. Ohne Anmeldung sofort starten.",
+    "Kostenloser Poker Turnier Timer mit TV-Modus, Multi-Controller-Fernbedienung, Liga-Charts, Deal-Making, Statistik-Dashboard & 590 Sprachansagen. ICM-Rechner, Call the Clock und mehr. Ohne Anmeldung sofort starten.",
   keywords: [
     "poker",
     "tournament",
@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     "poker timer app",
     "poker turnier planen",
     "icm rechner",
+    "deal making",
+    "call the clock",
+    "statistik dashboard",
   ],
   metadataBase: new URL(siteUrl),
   robots: {
@@ -84,17 +87,20 @@ export default function RootLayout({
       },
       featureList: [
         "Tournament Timer",
-        "Blind Structure Generator",
-        "Player Management",
-        "TV Mode with 4 Layouts",
-        "Smartphone Remote Control",
-        "590 Voice Announcements (DE + EN)",
-        "League & Series Mode",
-        "ICM Calculator",
+        "Blind Structure Generator with Drag & Drop",
+        "Player Management with Search & Duplicate Detection",
+        "TV Mode with 4 Layouts & Admin/Viewer Roles",
+        "Multi-Controller Smartphone Remote",
+        "590 Voice Announcements (DE + EN) + Custom Audio",
+        "League & Series Mode with Charts",
+        "ICM Calculator & Deal-Making (Chop)",
+        "Statistics Dashboard with Trend Charts",
         "Side Pot Calculator",
-        "Rebuy, Add-On & Bounty",
+        "Rebuy, Add-On, Bounty & Re-Entry",
+        "Call the Clock (Shot Clock)",
+        "Advanced Exports (CSV, Hendon Mob, Cloud)",
         "PWA & Offline Support",
-        "Multi-Format Support",
+        "Setup Wizard & Guided Tour",
       ],
       author: {
         "@type": "Organization",
